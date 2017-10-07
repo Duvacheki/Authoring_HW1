@@ -6,8 +6,24 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
+				
+			],
+
+			imageDescription : [
+					'This is some pretty butterflies',
+					'This is some kind of mutant chicken',
+					'This is a bunny',
+					'This is a oversaturated spring photo',
+					'This is some birds having a chat',
+					'This is a lamb cuddling a tree'
+				
 			]
+
 		},
 
 		summer : {
@@ -17,8 +33,22 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+				
+			],
+			imageDescription : [
+					'This is some colorful chairs',
+					'This is a cute puppy',
+					'This is a chillin cat',
+					'This is a cat on the beach',
+					'This is kitten hunting bugs',
+					'This is another chillin cat on a chair'
 			]
+		
 		},
 
 		autumn : {
@@ -28,8 +58,22 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
+			],
+			imageDescription : [
+					'This is a nice fall pathway',
+					'This an autumn display',
+					'This is a cat in a field',
+					'This a cat on a railing',
+					'This is a cat hidden in some leaves',
+					'This a cat resting on leaves'
 			]
+		
+		
 		},
 
 		winter : {
@@ -39,7 +83,21 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
+			],
+			imageDescription : [
+					'This is a snow covered forest',
+					'This is a snow man',
+					'This is a cat in snowy trees',
+					'This is a cat walking in snow',
+					'This is a cat walking on a snowy railing',
+					'This is a cat in snow'
 			]
+		
+		
 		}
 	};

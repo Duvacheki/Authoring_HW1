@@ -27,8 +27,11 @@
         //add an image source
         newSubImg.src = "images/" + objectIndex.images[index];
 
+        // add an index nymber to the thumbnail for array ref
+        newSubImg.dataset.index = index;
+
         // add some event handling
-        newSubImg.addEventListener('click', popLightbox, false);
+        newSubImg.addEventListener('click', function() {popLightbox(index, objectIndex); }, false);
 
         //append it to the container
         subImages.appendChild(newSubImg);
@@ -49,13 +52,33 @@
       element.addEventListener('click', changeElements, false);
     });
 
-    function popLightbox() {
-      debugger;
+    function popLightbox(currentIndex, currentObject) {
+      //debugger;
+      window.scrollTo(0, 0);
+      document.body.style.overflow = "hidden";
 
-
+      //turn on the lightbox
       let lightbox = document.querySelector('.lightbox');
-
       lightbox.style.display = 'block';
+
+      // populate all the content on the page
+      let lightboxImg = lightbox.querySelector('img');
+      let lightboxClose = lightbox.querySelector('.close-lightbox');
+      let lightboxDesc = lightbox.querySelector('p');
+
+      lightboxImg.src="images/" + currentObject.images[currentIndex];
+      lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+
+      lightboxClose.addEventListener('click', closeLightbox, false);
+    }
+
+    function closeLightbox() {
+      // reset all the lightbox content, close the lightbox (not in order)
+      let lightbox = document.querySelector('.lightbox');
+	  lightbox.style.display = 'none';
+	  lightbox.reset
+	  document.body.style.overflow = "auto";
+	  
     }
     // initialize the app
     // theSubhead.firstChild.nodeValue = dynamicContent['spring'].headline;
